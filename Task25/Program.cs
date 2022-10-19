@@ -18,12 +18,20 @@ while (b<1)
 #region DegreeNumberFunction
 int DegreeNumber(int Num,int Deg)
 {
-    int DNum = Num;
+    int St = Num;
 
      for (int i = 1; i < Deg; i++)
     {
-        DNum = DNum * Num;
+        St = St * Num;
     }
-        return DNum;
+        return St;
 }
+#endregion */
+
+/* Задача 25: Напишите цикл, который принимает на вход два числа (A и B)
+ * и возводит число A в натуральную степень B.
+3, 5 -> 243 (3⁵)
+2, 4 -> 16
+
+
 #endregion
