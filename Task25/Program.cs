@@ -8,11 +8,16 @@
 Console.WriteLine("Возведение числа А в степень В");
 Console.Write("Введите число А: ");
 int a = int.Parse(Console.ReadLine());
-Console.Write("Введите число В: ");
+Console.Write("Введите натуральное число В: ");
 int b = int.Parse(Console.ReadLine());
+while (b<1)
+    {
+        Console.WriteLine("Число B не натуральное. Введите число снова: ");
+        b = int.Parse(Console.ReadLine());
+    }
+        Console.WriteLine($"Значение равно {DegreeNumber(a, b)}");
 
-Console.WriteLine($"Значение равно {DegreeNumber(a, b)}");
-#region DegreeNumber
+#region DegreeNumberFunction
 int DegreeNumber(int Num,int Deg)
 {
     int DegNum = Num;
