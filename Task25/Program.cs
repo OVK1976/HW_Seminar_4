@@ -18,12 +18,12 @@ while (b<1)
 #region DegreeNumberFunction
 int DegreeNumber(int Num,int Deg)
 {
-    int DegNum = Num;
+    int DNum = Num;
 
      for (int i = 1; i < Deg; i++)
     {
-        DegNum = DegNum * Num;
+        DNum = DNum * Num;
     }
-        return DegNum;
+        return DNum;
 }
 #endregion
