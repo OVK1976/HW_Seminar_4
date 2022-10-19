@@ -22,7 +22,7 @@ int DegreeNumber(int Num,int Deg)
 
      for (int i = 1; i < Deg; i++)
     {
-        St = St * Num;
+        St *= Num;
     }
         return St;
 }
